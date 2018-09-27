@@ -1,16 +1,39 @@
 {
   "name": "react_portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Elmaz Khussainov portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "start:dev": "webpack-dev-server --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmazdremdzhe/react_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elmazdremdzhe/react_portfolio/issues"
+  },
+  "homepage": "https://github.com/elmazdremdzhe/react_portfolio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "prop-types": "^15.6.2",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
+  },
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-scripts": "1.1.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "react-redux": "^5.0.7",
+    "react-transition-group": "^2.5.0",
+    "redux": "^4.0.0"
   }
 }
