@@ -1,3 +1,5 @@
+
+
 @keyframes float-diag {
     0% {
 
@@ -5,7 +7,7 @@
     }
     50% {
 
-        transform: translatey(-50px) translatex(-40px);
+        transform: translatey(-150px) translatex(-140px);
 
     }
     100% {
@@ -46,26 +48,155 @@
     }
 }
 
+@keyframes rotate {
+    0% {
+        -webkit-transform:translate(100px, 100px) rotate(0deg) translate(-100px, -100px) rotate(0deg);
+
+    }
+    13% {
+        -webkit-transform:translate(100px, 100px) rotate(45deg) translate(-100px, -100px) rotate(-45deg);
+    }
+    25% {
+        -webkit-transform:translate(100px, 100px) rotate(90deg) translate(-100px, -100px) rotate(-90deg);
+    }
+    38% {
+        -webkit-transform:translate(100px, 100px) rotate(135deg) translate(-100px, -100px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform:translate(100px, 100px) rotate(180deg) translate(-100px, -100px) rotate(-180deg);
+    }
+    63% {
+        -webkit-transform:translate(100px, 100px) rotate(225deg) translate(-100px, -100px) rotate(225deg);
+    }
+    75% {
+        -webkit-transform:translate(100px, 100px) rotate(270deg) translate(-100px, -100px) rotate(-270deg);
+    }
+    88% {
+        -webkit-transform:translate(100px, 100px) rotate(315deg) translate(-100px, -100px) rotate(315deg);
+    }
+    100% {
+        -webkit-transform:translate(100px, 100px) rotate(360deg) translate(-100px, -100px) rotate(-360deg);
+    }
+}
+
+
+@keyframes float-right {
+    0% {
+        -webkit-transform:translate(100px, 100px) rotate(360deg) translate(-100px, -100px) rotate(-360deg);
+    }
+
+    13% {
+        -webkit-transform:translate(100px, 100px) rotate(315deg) translate(-100px, -100px) rotate(315deg);
+    }
+
+    25% {
+        -webkit-transform:translate(100px, 100px) rotate(270deg) translate(-100px, -100px) rotate(-270deg);
+    }
+
+    38% {
+        -webkit-transform:translate(100px, 100px) rotate(225deg) translate(-100px, -100px) rotate(225deg);
+    }
+
+    50% {
+        -webkit-transform:translate(100px, 100px) rotate(180deg) translate(-100px, -100px) rotate(-180deg);
+    }
+
+    63% {
+        -webkit-transform:translate(100px, 100px) rotate(135deg) translate(-100px, -100px) rotate(0deg);
+    }
+
+    75% {
+        -webkit-transform:translate(100px, 100px) rotate(90deg) translate(-100px, -100px) rotate(-90deg);
+    }
+
+    88% {
+        -webkit-transform:translate(100px, 100px) rotate(45deg) translate(-100px, -100px) rotate(-45deg);
+    }
+
+    100% {
+        -webkit-transform:translate(100px, 100px) rotate(0deg) translate(-100px, -100px) rotate(0deg);
+
+    }
+}
+
+.masthead{
+    position:relative;
+    overflow:hidden;
+    background-image: url("../img/header.jpg");
+
+
+}
+
+.floating{
+    position:absolute;
+
+    height: 100%;
+    width:100%;
+
+}
 
 .fireflight {
     position:absolute;
-
+    display:block;
     box-sizing: border-box;
 
     overflow: hidden;
 
-    transform: translatey(0px);
+
+    transform: translate(0px, 0px);
     animation: float-v 7s ease-in-out infinite;
 }
 
 .fireflight.transition-diag{
-    animation: float-diag 20s ease-in-out infinite;
+    animation: float-diag 20s linear infinite;
 }
 
 .fireflight.transition-right{
-    animation: float-right 27s ease-in-out infinite;
+    transform: translatey(-200px);
+    animation: float-right 27s linear infinite;
 }
 
 .fireflight.transition-up{
-    animation: float-up 29s ease-in-out infinite;
+    animation: float-up 29s linear infinite;
+}
+
+.fireflight.transition-rotate{
+    transform: translate(-100px, -100px);
+    animation: rotate 29s linear infinite;
+}
+
+
+
+
+/*demos wrap*/
+
+.demos-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 50px 30px 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 7px 30px -6px rgba(0, 0, 0, .15);
+    z-index: 10;
+}
+
+.box-shadow {
+    box-shadow: 0 7px 22px -5px rgba(25,25,25,0.2);
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.border-default {
+    border: 1px solid #e5e5e5;
+}
+
+.flex-img{
+
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+
 }
