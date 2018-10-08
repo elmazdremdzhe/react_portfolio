@@ -1,4 +1,7 @@
 
+element {
+    --main-color: #224256;
+}
 
 @keyframes float-diag {
     0% {
@@ -119,6 +122,9 @@
     }
 }
 
+
+
+
 .masthead{
     position:relative;
     overflow:hidden;
@@ -199,4 +205,17 @@
     height: auto;
     vertical-align: middle;
 
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+
+.thumb-container{
+    position:relative;
+}
+
+.mb-30{
+    margin-bottom: 30px;
 }

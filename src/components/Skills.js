@@ -6,7 +6,7 @@ const Skills = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center">
-                        <h2 className="section-heading">At Your Service</h2>
+                        <h2 className="section-heading">My Skills</h2>
                         <hr className="my-4"/>
                     </div>
                 </div>
