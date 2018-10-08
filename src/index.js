@@ -6,6 +6,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Contacts from './components/Contacts';
 
 
 import reducers from './reducers';
@@ -19,8 +20,10 @@ ReactDOM.render(
         <div>
         <Header/>
         <About/>
+
         <Projects/>
         <Skills/>
+            <Contacts/>
         </div>
     </Provider>
 

@@ -2,7 +2,7 @@ export default function() {
 
     return[
         {title : "PHP", icon: "img/skills/if_php_682678.png" , text: "PHP, OOP"},
-        {title : "MySQL", icon: "img/skills/download.png", text: "MySQL, SQL, MongoDB" },
+        {title : "MySQL", icon: "img/skills/if_my_sql_682683.png", text: "MySQL, SQL, MongoDB" },
         {title : "Laravel", icon: "img/skills/if_Laravel_682686.png", text: "Laravel, MVC" },
         {title : "JavaScript", icon: "img/skills/if_javascript_682690.png", text: "JavaScript, Jquery, Ajax" },
         {title : "Bootstrap", icon: "img/skills/if_Bootstrap_682700.png", text: "Bootstrap, HTML5, Canvas, CSS, SCSS" },

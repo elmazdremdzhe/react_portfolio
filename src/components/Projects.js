@@ -30,34 +30,12 @@ class Projects extends Component{
         });
     }
 
-    renderProjectss(){
-
-        return _.map(this.props.projects, project => {
-            return(
-                <div className="col-lg-4 col-sm-6">
-                    <a className="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-                        <img className="img-fluid" src={project.thumb} alt=""/>
-                        <div className="portfolio-box-caption">
-                            <div className="portfolio-box-caption-content">
-                                <div className="project-category text-faded">
-                                    Category
-                                </div>
-                                <div className="project-name">
-                                    {project.title}
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            );
-        });
-    }
 
 
    render(){
        console.log(this.props.projects);
        return(
-<div>
+            <div>
                <section className=" demos-wrap">
                    <h2 className="text-center pb-3">Projects</h2>
                    <div className="row">
@@ -68,7 +46,7 @@ class Projects extends Component{
 
 
 
-</div>
+            </div>
 
        );
    }
