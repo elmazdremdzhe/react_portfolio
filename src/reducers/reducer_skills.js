@@ -6,7 +6,7 @@ export default function() {
         {title : "Laravel", icon: "img/skills/if_Laravel_682686.png", text: "Laravel, MVC" },
         {title : "JavaScript", icon: "img/skills/if_javascript_682690.png", text: "JavaScript, Jquery, Ajax" },
         {title : "Bootstrap", icon: "img/skills/if_Bootstrap_682700.png", text: "Bootstrap, HTML5, Canvas, CSS, SCSS" },
-        {title : "React JS", icon: "img/skills/if_react_js_1322468 (1).png", text: "React, Redux, Webpack" },
+        {title : "React JS", icon: "img/skills/if_react_js_1322468.png", text: "React, Redux, Webpack" },
 
     ];
 

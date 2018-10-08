@@ -4,11 +4,13 @@ import _ from 'lodash';
 
 class Projects extends Component{
 
+
+
     renderProjects(){
 
         return _.map(this.props.projects, project => {
             return(
-                <a href="#" className="col-md-4 text-decoration-none text-center mb-30 portfolio-box">
+                <div className="col-md-4 text-decoration-none text-center mb-30 portfolio-box">
                     <div className="overflow-hidden rounded border-default box-shadow thumb-container">
                         <img src={project.thumb} alt="Unishop Template 1" className="d-block flex-img"/>
                         <div className="portfolio-box-caption">
@@ -25,7 +27,7 @@ class Projects extends Component{
 
                     </div>
 
-                </a>
+                </div>
             );
         });
     }

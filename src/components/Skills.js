@@ -7,9 +7,9 @@ class Skills extends Component{
     renderSkills(){
         return _.map(this.props.skills, skill => {
             return(
-                <div className="col-lg-2 col-md-2 col-xl-2 text-center">
+                <div className="col-lg-2 col-md-2 col-xl-2 col-sm-4 text-center">
                     <div className="service-box mt-5 mx-auto">
-                        <img src={skill.icon} alt={skill.title} className="d-block flex-img"/>
+                        <img src={skill.icon} alt={skill.title} className="d-block flex-img m-auto"/>
 
                         <p className="text-muted mb-0">{skill.text}</p>
                     </div>

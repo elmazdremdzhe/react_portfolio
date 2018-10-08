@@ -11,7 +11,7 @@ const Header = (props) => {
 
                 <div className="row">
                     <div className="col-lg-10 mx-auto">
-                        <h1 className="text-uppercase  text-faded">
+                        <h1 className="text-uppercase  text-white">
                             <strong>Your mind is a forest of great ideas</strong>
                         </h1>
 
