@@ -1,21 +1,31 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import { selectProject } from '../actions/index.js';
 import _ from 'lodash';
 
+import Project from './Project';
+
 class Projects extends Component{
+
 
 
 
     renderProjects(){
 
         return _.map(this.props.projects, project => {
-            return(
-                <div className="col-md-4 text-decoration-none text-center mb-30 portfolio-box">
-                    <div className="overflow-hidden rounded border-default box-shadow thumb-container">
-                        <img src={project.thumb} alt="Unishop Template 1" className="d-block flex-img"/>
-                        <div className="portfolio-box-caption">
 
-                            <div className="portfolio-box-caption-content">
+            return(
+
+                <div key={project.id}
+
+                     onClick={(e) => this.clickProject(project.id, e)} className="col-md-4 text-decoration-none text-center mb-30 portfolio-box">
+
+                    <div
+
+                        className="overflow-hidden rounded border-default box-shadow thumb-container">
+                        <img src={project.thumb} alt={project.title} className="d-block flex-img"/>
+                        <div className="portfolio-box-caption"  >
+                            <div className="portfolio-box-caption-content" >
                                 <div className="project-category text-faded">
                                     Category
                                 </div>
@@ -35,7 +45,7 @@ class Projects extends Component{
 
 
    render(){
-       console.log(this.props.projects);
+
        return(
             <div>
                <section className=" demos-wrap">
@@ -44,13 +54,20 @@ class Projects extends Component{
                        {this.renderProjects()}
 
                    </div>
+
+
                </section>
 
 
+                <Project   />
 
             </div>
 
        );
+   }
+
+    clickProject(project){
+       this.props.selectProject(project);
    }
 
 }
@@ -61,4 +78,4 @@ function mapStateToProps(state){
 }
 
 
-export default connect(mapStateToProps)(Projects);
+export default connect(mapStateToProps, {selectProject})(Projects);
