@@ -251,3 +251,7 @@ element {
 .skill-box{
     max-width: 100px;
 }
+
+p{
+    white-space: pre-line;
+}

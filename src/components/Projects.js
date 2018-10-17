@@ -27,7 +27,7 @@ class Projects extends Component{
                         <div className="portfolio-box-caption"  >
                             <div className="portfolio-box-caption-content" >
                                 <div className="project-category text-faded">
-                                    Category
+                                    {project.category}
                                 </div>
                                 <div className="project-name">
                                     {project.title}

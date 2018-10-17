@@ -17,7 +17,7 @@ const Header = (props) => {
 
                     </div>
                     <div className="col-lg-8 mx-auto">
-                        <p className="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+                        <p className="text-faded mb-5">Start working on them now. I will help with the technical part. </p>
 
                     </div>
                 </div>

@@ -16,8 +16,8 @@ class Project extends Component{
             console.log(project.thumb);
             const bannerStyle = {
                 background: `linear-gradient(
-                    rgba(34, 66, 86, 0.8),
-                    rgba(34, 66, 86, 0.8)
+                    rgba(34, 66, 86, 0.85),
+                    rgba(34, 66, 86, 0.85)
                     ), url("${project.thumb}") center no-repeat,
                 center, no-repeat`
                 //backgroundImage: `url("${project.thumb}")`
